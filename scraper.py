@@ -4,6 +4,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
+from supabase import create_client
+from dotenv import load_dotenv
 import time
 import json
 import os
@@ -16,17 +18,24 @@ class Scraper:
         self.driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
         self.date = date
         
-        # Create directory for scraped data
+        # creating the directory for scraped data
         os.makedirs('backend/app/data/scraped_data', exist_ok=True)
         
-        # # Initialize Supabase connection
+        """I dont need this db connection either.. 
+        Story: I initially thought that i will push the individual scraped files to db because i will need to deploy it someday.
+        But then i came to know about github Actions. I came to know that it creates the directory and will get the file locally (form the running server).. 
+        So, when running the code, it will make the directory and store the file locally. 
+        So, instead of pushing everything on db, i thought to keep it on local machine (github actions's machine) and it will create it during the workflow.
+        Good thing is that it will delete all of this temp created directories, once the code is executed.
+        """
+        # Initialize Supabase connection (just keeping it still in the code)
         # load_dotenv()
         # url = os.getenv("SUPABASE_URL")
         # key = os.getenv("SUPABASE_ANON_KEY")
-        # 
+        
         # if not url or not key:
         #     raise ValueError("Missing Supabase credentials in .env file")
-        # 
+        
         # self.supabase = create_client(url, key)
         # print("Connected to Supabase!")
 
@@ -91,7 +100,7 @@ class Scraper:
                     break
                 
                 # Process each food item
-                for row_index, row in enumerate(rows, 1):
+                for row in enumerate(rows, 1):
                     try:
                         button_click = row.find_element(By.CSS_SELECTOR, 'td:first-child div span')
                         food_name = button_click.text.strip()
@@ -134,10 +143,7 @@ class Scraper:
         
         # Save all items to file
         if all_food_items:
-            file_saved = self.save_to_file(all_food_items, meal_type)
-        else:
-            file_saved = False
-        
+            self.save_to_file(all_food_items, meal_type)
         return total_items > 0
 
     def fetch_breakfast(self):
@@ -152,22 +158,23 @@ class Scraper:
         """Scrape dinner data"""
         return self.scrape_meal('dinner')
 
-    def fetch_brunch(self):
-        """Scrape brunch data"""
-        return self.scrape_meal('brunch')
+    # def fetch_brunch(self):
+    #     """Scrape brunch data"""
+    #     return self.scrape_meal('brunch')
 
-    def fetch_all_meals(self):
-        """Scrape all available meals for the date"""
-        meals = ['breakfast', 'lunch', 'dinner']
-        results = {}
+ # i dont neeed to fetch all meals. because when i will pull all the data from db, i will pull all available at once.. so i dont need all meals func.. still keeping it.. (commenting it out)
+    # def fetch_all_meals(self):
+    #     """Scrape all available meals for the date"""
+    #     meals = ['breakfast', 'lunch', 'dinner']
+    #     results = {}
         
-        for meal in meals:
-            try:
-                results[meal] = self.scrape_meal(meal)
-            except Exception as e:
-                results[meal] = False
+    #     for meal in meals:
+    #         try:
+    #             results[meal] = self.scrape_meal(meal)
+    #         except Exception as e:
+    #             results[meal] = False
         
-        return results
+    #     return results
 
     # def clear_todays_data(self):
     #     """Clear existing data for today's date (useful for re-scraping)"""

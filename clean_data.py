@@ -1,9 +1,8 @@
-import pandas as pd
 import json
 import re
 import os
 from dotenv import load_dotenv
-from supabase import create_client, Client
+from supabase import create_client
 from database import SupabaseUploader
 
 class FoodDataCleaner:
@@ -106,80 +105,10 @@ class FoodDataCleaner:
         
         return nutrition
     
-    def clean_from_database(self, scrape_date):
-        """Clean data directly from the scraped_food_data table"""
-        
-        try:
-            # Fetch raw scraped data from database
-            print(f"Fetching raw data for {scrape_date}...")
-            result = self.supabase.table('scraped_food_data').select('*').eq('scrape_date', scrape_date).execute()
-            raw_data = result.data
-            
-            if not raw_data:
-                print(f"No raw data found for {scrape_date}")
-                return []
-            
-            print(f"Found {len(raw_data)} raw items to clean")
-            
-            all_cleaned_data = []
-            processed_count = 0
-            
-            for item in raw_data:
-                try:
-                    # Extract structured nutrition info
-                    nutrition_info = self.extract_nutrition_info(item['nutritional_info'])
-                    
-                    # Create cleaned item
-                    cleaned_item = {
-                        'meal_type': item['meal_type'],
-                        'station_name': item['station_name'],
-                        'food_name': item['food_name'],
-                        'nutrition': nutrition_info
-                    }
-                    
-                    all_cleaned_data.append(cleaned_item)
-                    processed_count += 1
-                    
-                    if processed_count % 10 == 0:
-                        print(f"Processed {processed_count}/{len(raw_data)} items...")
-                        
-                except Exception as e:
-                    print(f"Error processing item {item.get('food_name', 'Unknown')}: {e}")
-                    continue
-            
-            print(f"Successfully cleaned {len(all_cleaned_data)} items")
-            
-            # Upload cleaned data to the cleaned_data table
-            if all_cleaned_data:
-                print("Uploading cleaned data to database...")
-                uploader = SupabaseUploader()
-                uploader.upload_data(all_cleaned_data)
-                print("Upload completed!")
-            
-            return all_cleaned_data
-            
-        except Exception as e:
-            print(f"Error cleaning data from database: {e}")
-            return []
-        
     @staticmethod
     def clean_food_data():
-        """Main function to clean all food data files (currently active method)"""
-        # database approach commented out for now to avoid more db load
-        # from datetime import datetime
-        # 
-        # # Get today's date
-        # today_date = datetime.today().strftime('%Y-%m-%d')
-        # 
-        # # Create cleaner instance with database connection
-        # cleaner = FoodDataCleaner()
-        # 
-        # # Clean data directly from database
-        # cleaned_data = cleaner.clean_from_database(today_date)
-        # 
-        # return cleaned_data
-        
-        
+        """ Main function to clean all food data files (currently active method)"""
+
         # Create output directory
         os.makedirs('backend/app/data/cleaned_data', exist_ok=True)
         
@@ -233,6 +162,8 @@ class FoodDataCleaner:
             except Exception as e:
                 print(f"Error processing {file_path}: {str(e)}")
         
+        """Remember that I am not deleting all the data from the db cuz there's already a cron job at the db side (supabase) """
+
         # Save combined cleaned data
         combined_output_path = 'backend/app/data/cleaned_data/all_food_items_cleaned.json'
         with open(combined_output_path, 'w', encoding='utf-8') as f:

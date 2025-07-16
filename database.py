@@ -31,8 +31,3 @@ class SupabaseUploader:
         else:
             result = self.supabase.table('cleaned_data').insert({"data": data}).execute()
             print(f"Inserted record with ID: {result.data[0]['id']}")
-
-# Usage
-if __name__ == "__main__":
-    uploader = SupabaseUploader()
-    uploader.upload_json_file('backend/app/data/cleaned_data/all_food_items_cleaned.json')

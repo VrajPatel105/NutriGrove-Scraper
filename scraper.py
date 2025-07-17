@@ -9,6 +9,8 @@ from dotenv import load_dotenv
 import time
 import json
 import os
+import datetime
+import time
 # from dotenv import load_dotenv
 # from supabase import create_client, Client
 
@@ -188,3 +190,12 @@ class Scraper:
         """Close the browser"""
         self.driver.quit()
         print("Browser closed")
+
+def main():
+    today_date = datetime.datetime.today().strftime('%Y-%m-%d')
+    scraper = Scraper(today_date)
+    scraper.fetch_breakfast()
+
+
+if __name__ == "__main__":
+    main()

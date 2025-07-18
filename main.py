@@ -8,8 +8,8 @@ scraper = Scraper(today_date)
 
 try:
     scraper.fetch_breakfast()
-    scraper.fetch_lunch()
-    scraper.fetch_dinner()
+    # scraper.fetch_lunch()
+    # scraper.fetch_dinner()
 finally:
     scraper.close()
 

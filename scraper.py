@@ -14,6 +14,7 @@ class Scraper:
     def __init__(self, date):
         # Configure Chrome options for headless operation
         chrome_options = Options()
+        chrome_options.add_argument("--headless")  # Added for GitHub Actions
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--disable-dev-shm-usage")
         chrome_options.add_argument("--disable-gpu")

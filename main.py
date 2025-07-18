@@ -1,7 +1,6 @@
 from scraper import Scraper
 from datetime import datetime
 from clean_data import FoodDataCleaner
-import json
 # Use today's date
 today_date = datetime.today().strftime('%Y-%m-%d')
 scraper = Scraper(today_date)

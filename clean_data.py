@@ -110,13 +110,13 @@ class FoodDataCleaner:
         """ Main function to clean all food data files (currently active method)"""
 
         # Create output directory
-        os.makedirs('backend/app/data/cleaned_data', exist_ok=True)
+        os.makedirs('data/cleaned_data', exist_ok=True)
         
         # File paths with meal types
         file_configs = [
-            {"path": "backend/app/data/scraped_data/food_items_breakfast.json", "meal_type": "breakfast"},
-            {"path": "backend/app/data/scraped_data/food_items_lunch.json", "meal_type": "lunch"}, 
-            {"path": "backend/app/data/scraped_data/food_items_dinner.json", "meal_type": "dinner"}
+            {"path": "data/scraped_data/food_items_breakfast.json", "meal_type": "breakfast"},
+            {"path": "data/scraped_data/food_items_lunch.json", "meal_type": "lunch"}, 
+            {"path": "data/scraped_data/food_items_dinner.json", "meal_type": "dinner"}
         ]
         
         all_cleaned_data = []
@@ -149,7 +149,7 @@ class FoodDataCleaner:
                 
                 # Save individual cleaned file
                 filename = os.path.basename(file_path)
-                output_path = f'backend/app/data/cleaned_data/{filename}'
+                output_path = f'data/cleaned_data/{filename}'
                 
                 with open(output_path, 'w', encoding='utf-8') as f:
                     json.dump(cleaned_items, f, indent=2, ensure_ascii=False)
@@ -165,7 +165,7 @@ class FoodDataCleaner:
         """Remember that I am not deleting all the data from the db cuz there's already a cron job at the db side (supabase) """
 
         # Save combined cleaned data
-        combined_output_path = 'backend/app/data/cleaned_data/all_food_items_cleaned.json'
+        combined_output_path = 'data/cleaned_data/all_food_items_cleaned.json'
         with open(combined_output_path, 'w', encoding='utf-8') as f:
             json.dump(all_cleaned_data, f, indent=2, ensure_ascii=False)
         

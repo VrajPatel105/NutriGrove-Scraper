@@ -34,12 +34,12 @@ class Scraper:
         self.date = date
         
         # Creating the directory for scraped data
-        os.makedirs('backend/app/data/scraped_data', exist_ok=True)
+        os.makedirs('data/scraped_data', exist_ok=True)
 
     def save_to_file(self, food_data_list, meal_type):
         """Save scraped food data to local JSON file"""
         try:
-            file_path = f'backend/app/data/scraped_data/food_items_{meal_type}.json'
+            file_path = f'data/scraped_data/food_items_{meal_type}.json'
             
             with open(file_path, 'w', encoding='utf-8') as f:
                 json.dump(food_data_list, f, indent=2, ensure_ascii=False)

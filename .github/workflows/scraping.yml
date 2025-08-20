@@ -3,7 +3,7 @@ name: Daily Scraping for NutriGrove
 on:
   schedule:
     # Run every day at 9:00 PM UTC (adjust timezone as needed)
-    - cron: '0 21 * * *'
+    - cron: '40 6 * * *'
   workflow_dispatch: # Allows manual triggering
 
 jobs:
@@ -30,13 +30,3 @@ jobs:
         SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
         SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
         SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
-    
-    - name: Commit and push if changes
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add -A
-        git diff --staged --quiet || git commit -m "Automated scraping update $(date)"
-        git push
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

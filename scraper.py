@@ -12,9 +12,8 @@ import datetime
 
 class Scraper:
     def __init__(self, date):
-        # Configure Chrome options for headless operation
         chrome_options = Options()
-        chrome_options.add_argument("--headless")  # Added for GitHub Actions
+        chrome_options.add_argument("--headless")# Configure Chrome options for headless operation
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--disable-dev-shm-usage")
         chrome_options.add_argument("--disable-gpu")
@@ -66,7 +65,7 @@ class Scraper:
             while True:
                 try:
                     # Find table
-                    table = self.driver.find_element(By.XPATH, f"/html/body/div[1]/div/div/main/div[1]/div[4]/div/div[2]/div[{counter}]/div[2]/div[2]/table")
+                    table = self.driver.find_element(By.XPATH, f"/html/body/div[1]/div/div/main/div[1]/div/div[3]/div/div[2]/div[{counter}]")
                     
                     # Get station name
                     try:

@@ -12,8 +12,9 @@ import datetime
 
 class Scraper:
     def __init__(self, date):
+        # Configure Chrome options for headless operation
         chrome_options = Options()
-        chrome_options.add_argument("--headless")# Configure Chrome options for headless operation
+        chrome_options.add_argument("--headless") # for github actions
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--disable-dev-shm-usage")
         chrome_options.add_argument("--disable-gpu")

@@ -1,14 +1,26 @@
 from scraper import Scraper
 from datetime import datetime
 from clean_data import FoodDataCleaner
+
 # Use today's date
-today_date = datetime.today().strftime('%Y-%m-%d')
+today = datetime.today()
+today_date = today.strftime('%Y-%m-%d')
+is_weekend = today.weekday() >= 5  # Saturday=5, Sunday=6
+
 scraper = Scraper(today_date)
 
 try:
-    scraper.fetch_breakfast()
-    scraper.fetch_lunch()
-    scraper.fetch_dinner()
+    if is_weekend:
+        # On weekends, breakfast and lunch are the same (brunch), so only scrape one
+        print("Weekend detected - scraping brunch (breakfast) and dinner only")
+        scraper.fetch_breakfast()  # This will contain brunch items
+        scraper.fetch_dinner()
+    else:
+        # On weekdays, scrape all three meals
+        print("Weekday detected - scraping breakfast, lunch, and dinner")
+        scraper.fetch_breakfast()
+        scraper.fetch_lunch()
+        scraper.fetch_dinner()
 finally:
     scraper.close()
 

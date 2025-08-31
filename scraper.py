@@ -14,7 +14,7 @@ class Scraper:
     def __init__(self, date):
         # Configure Chrome options for headless operation
         chrome_options = Options()
-        chrome_options.add_argument("--headless") # for github actions
+        chrome_options.add_argument("--headless")
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--disable-dev-shm-usage")
         chrome_options.add_argument("--disable-gpu")
@@ -57,74 +57,135 @@ class Scraper:
         
         try:
             self.driver.get(url)
-            time.sleep(10)  # Wait for page to load
+            time.sleep(15)  # Wait longer for JS to load
+            
+            print(f"Page loaded: {self.driver.title}")
+            
+            # Find all tables with menu data
+            tables = self.driver.find_elements(By.CSS_SELECTOR, 'table')
+            print(f"Found {len(tables)} tables with menu data")
             
             all_food_items = []
             total_items = 0
-            counter = 1
             
-            while True:
+            # Process each table (each table represents a menu section/station)
+            for table_index, table in enumerate(tables, 1):
                 try:
-                    # Find table
-                    table = self.driver.find_element(By.XPATH, f"/html/body/div[1]/div/div/main/div[1]/div/div[3]/div/div[2]/div[{counter}]")
+                    # Try to find station name near the table
+                    station_name = f"Station {table_index}"
                     
-                    # Get station name
-                    try:
-                        station_name_element = self.driver.find_element(By.XPATH, f"/html/body/div/div/div/main/div[1]/div[3]/div/div[2]/div[{counter}]/div[1]/div[2]/div")
-                        station_name = station_name_element.text.strip()
-                        print(f"Found station: {station_name}")
-                    except Exception:
-                        station_name = f"Station {counter}"
-                    
-                    # Get table rows
-                    rows = table.find_elements(By.CSS_SELECTOR, 'tr')
-                    if not rows:
-                        break
-                    
-                    for i, row in enumerate(rows, 1): 
+                    # Look for station name in various locations around the table
+                    parent = table
+                    for _ in range(3):  # Go up 3 levels to find station name
+                        parent = parent.find_element(By.XPATH, "..")
                         try:
-                            button_click = row.find_element(By.CSS_SELECTOR, 'td:first-child div span')
-                            food_name = button_click.text.strip()
+                            # Look for headings near this table
+                            headings = parent.find_elements(By.CSS_SELECTOR, "h1, h2, h3, h4, h5, h6, .station-name, [class*='station'], [class*='title']")
+                            for heading in headings:
+                                text = heading.text.strip()
+                                if text and len(text) > 2:  # Valid station name
+                                    station_name = text
+                                    break
+                            if station_name != f"Station {table_index}":
+                                break
+                        except:
+                            continue
+                    
+                    print(f"Found station: {station_name}")
+                    
+                    # Get all rows from this table
+                    rows = table.find_elements(By.CSS_SELECTOR, 'tr')
+                    
+                    for row in rows:
+                        try:
+                            # Get all cells in this row
+                            cells = row.find_elements(By.CSS_SELECTOR, 'td')
+                            if len(cells) < 1:
+                                continue
                             
-                            if not food_name:  # Skip empty rows
+                            # First cell should contain food name
+                            first_cell = cells[0]
+                            food_name = first_cell.text.strip()
+                            
+                            # Skip header rows or empty cells
+                            if not food_name or food_name.lower() in ['portion', 'calories', '']:
                                 continue
                             
                             print(f" -> Processing: {food_name}")
                             
-                            # Click to open nutrition popup
-                            button_click.click()
-                            time.sleep(3)
+                            # Try to click for nutrition info
+                            nutrition_info = "Nutrition info not available"
                             
-                            # Wait for popup and get nutrition info
-                            wait = WebDriverWait(self.driver, 10)
-                            popup = wait.until(EC.presence_of_element_located((By.XPATH, "/html/body/div/div/div/main/div[2]/div")))
-                            popup_text = popup.text
+                            try:
+                                # Look for clickable element in first cell
+                                clickable_elements = first_cell.find_elements(By.CSS_SELECTOR, "button, [role='button'], span[class*='click'], div[class*='click']")
+                                
+                                if clickable_elements:
+                                    clickable = clickable_elements[0]
+                                    
+                                    # Scroll into view and click
+                                    self.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", clickable)
+                                    time.sleep(1)
+                                    
+                                    try:
+                                        clickable.click()
+                                    except:
+                                        self.driver.execute_script("arguments[0].click();", clickable)
+                                    
+                                    time.sleep(3)
+                                    
+                                    # Look for popup/modal with nutrition info
+                                    modal_selectors = [
+                                        "[role='dialog']", ".modal", ".popup", 
+                                        "div[class*='modal']", "div[class*='popup']",
+                                        "div[class*='nutrition']", "div[class*='detail']"
+                                    ]
+                                    
+                                    for modal_sel in modal_selectors:
+                                        try:
+                                            wait = WebDriverWait(self.driver, 5)
+                                            modal = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, modal_sel)))
+                                            nutrition_info = modal.text
+                                            break
+                                        except:
+                                            continue
+                                    
+                                    # Close modal
+                                    close_selectors = [
+                                        "button[aria-label*='close']", ".close", ".close-button",
+                                        "button[class*='close']", "[data-dismiss]", "button:last-child"
+                                    ]
+                                    
+                                    for close_sel in close_selectors:
+                                        try:
+                                            close_btn = self.driver.find_element(By.CSS_SELECTOR, close_sel)
+                                            close_btn.click()
+                                            break
+                                        except:
+                                            continue
+                                    
+                                    time.sleep(1)
+                                    
+                            except Exception as click_error:
+                                print(f"Could not get detailed nutrition for {food_name}: {click_error}")
                             
                             # Create food data object
                             food_data = {
                                 'station_name': station_name,
                                 'food_name': food_name,
-                                'nutritional_info': popup_text,
+                                'nutritional_info': nutrition_info,
                             }
                             
-                            # Add to list for file saving
                             all_food_items.append(food_data)
                             total_items += 1
                             
-                            # Close popup
-                            close_button = self.driver.find_element(By.XPATH, "/html/body/div/div/div/main/div[2]/div/button[1]")
-                            close_button.click()
-                            time.sleep(2)
-                            
                         except Exception as e:
-                            print(f"Error processing item {i}: {e}")
+                            print(f"Error processing table row: {e}")
                             continue
-                    
-                    counter += 1
-                    
+                
                 except Exception as e:
-                    print(f" Finished processing stations for {meal_type}")
-                    break
+                    print(f"Error processing table {table_index}: {e}")
+                    continue
             
             # Save all items to file
             if all_food_items:

@@ -3,7 +3,7 @@ name: Daily Scraping for NutriGrove
 on:
   schedule:
     # Run every day at 9:00 PM UTC (adjust timezone as needed)
-    - cron: '40 6 * * *'
+    - cron: '35 10 * * *'
   workflow_dispatch: # Allows manual triggering
 
 jobs:

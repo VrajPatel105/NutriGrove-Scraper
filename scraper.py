@@ -9,32 +9,95 @@ import time
 import json
 import os
 import datetime
+import random
+import requests
 
 class Scraper:
     def __init__(self, date):
-        # Configure Chrome options for headless operation
-        chrome_options = Options()
-        chrome_options.add_argument("--headless")
-        chrome_options.add_argument("--no-sandbox")
-        chrome_options.add_argument("--disable-dev-shm-usage")
-        chrome_options.add_argument("--disable-gpu")
-        chrome_options.add_argument("--window-size=1920,1080")
-        chrome_options.add_argument("--disable-extensions")
-        chrome_options.add_argument("--disable-logging")
-        chrome_options.add_argument("--disable-default-apps")
-        chrome_options.add_argument("--silent")
-        chrome_options.add_experimental_option('excludeSwitches', ['enable-logging'])
-        chrome_options.add_experimental_option('useAutomationExtension', False)
-        
-        # Initialize Chrome driver with options
+        # Get a realistic user agent
+        self.user_agents = [
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+        ]
+
+        # Configure Chrome options for stealth operation
+        options = Options()
+        options.add_argument("--headless")
+        options.add_argument("--no-sandbox")
+        options.add_argument("--disable-dev-shm-usage")
+        options.add_argument("--disable-gpu")
+        options.add_argument("--window-size=1920,1080")
+        options.add_argument("--disable-extensions")
+        options.add_argument("--disable-logging")
+        options.add_argument("--disable-default-apps")
+        options.add_argument("--silent")
+        options.add_argument("--disable-blink-features=AutomationControlled")
+        options.add_argument("--disable-features=VizDisplayCompositor")
+        options.add_experimental_option('excludeSwitches', ['enable-logging', 'enable-automation'])
+        options.add_experimental_option('useAutomationExtension', False)
+
+        # Set a random user agent
+        user_agent = random.choice(self.user_agents)
+        options.add_argument(f"--user-agent={user_agent}")
+
+        # Initialize Chrome driver with stealth options
         self.driver = webdriver.Chrome(
             service=Service(ChromeDriverManager().install()),
-            options=chrome_options
+            options=options
         )
+
+        # Execute stealth scripts after driver initialization
+        self.driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
+        self.driver.execute_cdp_cmd('Network.setUserAgentOverride', {
+            "userAgent": user_agent,
+            "acceptLanguage": "en-US,en;q=0.9",
+            "platform": "Win32"
+        })
+
         self.date = date
-        
+
         # Creating the directory for scraped data
         os.makedirs('data/scraped_data', exist_ok=True)
+
+    def human_delay(self, min_delay=1, max_delay=3):
+        """Add random delay to mimic human behavior"""
+        delay = random.uniform(min_delay, max_delay)
+        time.sleep(delay)
+
+    def check_cloudflare_protection(self):
+        """Check if page is showing Cloudflare protection"""
+        title = self.driver.title.lower()
+        page_source = self.driver.page_source.lower()
+
+        cloudflare_indicators = [
+            "attention required",
+            "cloudflare",
+            "checking your browser",
+            "security check",
+            "ddos protection",
+            "ray id"
+        ]
+
+        for indicator in cloudflare_indicators:
+            if indicator in title or indicator in page_source:
+                return True
+        return False
+
+    def wait_for_cloudflare(self, max_wait=60):
+        """Wait for Cloudflare protection to complete"""
+        print("Detected Cloudflare protection, waiting for bypass...")
+        start_time = time.time()
+
+        while time.time() - start_time < max_wait:
+            if not self.check_cloudflare_protection():
+                print("Cloudflare protection bypassed successfully!")
+                return True
+            self.human_delay(2, 5)
+
+        print("Failed to bypass Cloudflare protection within timeout")
+        return False
 
     def save_to_file(self, food_data_list, meal_type):
         """Save scraped food data to local JSON file"""
@@ -57,8 +120,16 @@ class Scraper:
         
         try:
             self.driver.get(url)
-            time.sleep(15)  # Wait longer for JS to load
-            
+
+            # Random delay to appear more human-like
+            self.human_delay(8, 18)
+
+            # Check if Cloudflare protection is active
+            if self.check_cloudflare_protection():
+                if not self.wait_for_cloudflare():
+                    print("Failed to bypass Cloudflare protection, aborting scrape")
+                    return False
+
             print(f"Page loaded: {self.driver.title}")
             
             # Find all tables with menu data
@@ -125,14 +196,14 @@ class Scraper:
                                     
                                     # Scroll into view and click
                                     self.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", clickable)
-                                    time.sleep(1)
-                                    
+                                    self.human_delay(0.5, 1.5)
+
                                     try:
                                         clickable.click()
                                     except:
                                         self.driver.execute_script("arguments[0].click();", clickable)
-                                    
-                                    time.sleep(3)
+
+                                    self.human_delay(2, 4)
                                     
                                     # Look for popup/modal with nutrition info
                                     modal_selectors = [
@@ -163,8 +234,8 @@ class Scraper:
                                             break
                                         except:
                                             continue
-                                    
-                                    time.sleep(1)
+
+                                    self.human_delay(0.5, 1.5)
                                     
                             except Exception as click_error:
                                 print(f"Could not get detailed nutrition for {food_name}: {click_error}")

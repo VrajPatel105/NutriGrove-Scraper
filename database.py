@@ -24,10 +24,10 @@ class SupabaseUploader:
         # If your data is a list of objects, insert each one
         if isinstance(data, list):
             for item in data:
-                result = self.supabase.table('wpi_cleaned_data').insert({"data": item}).execute()
+                result = self.supabase.table('cleaned_data').insert({"data": item}).execute()
                 print(f"Inserted record with ID: {result.data[0]['id']}")
 
         # If your data is a single object, insert it
         else:
-            result = self.supabase.table('wpi_cleaned_data').insert({"data": data}).execute()
+            result = self.supabase.table('cleaned_data').insert({"data": data}).execute()
             print(f"Inserted record with ID: {result.data[0]['id']}")

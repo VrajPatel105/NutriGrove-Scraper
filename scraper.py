@@ -10,6 +10,7 @@ import json
 import os
 import datetime
 import random
+import requests
 
 class Scraper:
     def __init__(self, date):
@@ -23,7 +24,7 @@ class Scraper:
 
         # Configure Chrome options for stealth operation
         options = Options()
-        # options.add_argument("--headless")
+        options.add_argument("--headless")
         options.add_argument("--no-sandbox")
         options.add_argument("--disable-dev-shm-usage")
         options.add_argument("--disable-gpu")
@@ -37,9 +38,9 @@ class Scraper:
         options.add_experimental_option('excludeSwitches', ['enable-logging', 'enable-automation'])
         options.add_experimental_option('useAutomationExtension', False)
 
-        # Set a random user agent and store on the instance for later debug requests
-        self.user_agent = random.choice(self.user_agents)
-        options.add_argument(f"--user-agent={self.user_agent}")
+        # Set a random user agent
+        user_agent = random.choice(self.user_agents)
+        options.add_argument(f"--user-agent={user_agent}")
 
         # Initialize Chrome driver with stealth options
         self.driver = webdriver.Chrome(
@@ -50,7 +51,7 @@ class Scraper:
         # Execute stealth scripts after driver initialization
         self.driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
         self.driver.execute_cdp_cmd('Network.setUserAgentOverride', {
-            "userAgent": self.user_agent,
+            "userAgent": user_agent,
             "acceptLanguage": "en-US,en;q=0.9",
             "platform": "Win32"
         })
@@ -115,14 +116,13 @@ class Scraper:
     def scrape_meal(self, meal_type):
         """Generic method to scrape any meal type"""
         print(f"\n🔍 Scraping {meal_type} data for {self.date}...")
-        url = f"https://new.dineoncampus.com/WPI/whats-on-the-menu/morgan-dining-hall/{self.date}/{meal_type}"
+        url = f"https://new.dineoncampus.com/umassd/whats-on-the-menu/the-grove/{self.date}/{meal_type}"
         
         try:
             self.driver.get(url)
 
             # Random delay to appear more human-like
             self.human_delay(8, 18)
-
 
             # Check if Cloudflare protection is active
             if self.check_cloudflare_protection():

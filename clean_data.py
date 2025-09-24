@@ -6,17 +6,18 @@ from supabase import create_client
 from database import SupabaseUploader
 
 class FoodDataCleaner:
-    
-    def __init__(self):
+
+    def __init__(self, university_key='umassd'):
         """Initialize Supabase connection"""
         load_dotenv()
         url = os.getenv("SUPABASE_URL")
         key = os.getenv("SUPABASE_ANON_KEY")
-        
+
         if not url or not key:
             raise ValueError("Missing Supabase credentials in .env file")
-        
+
         self.supabase = create_client(url, key)
+        self.university_key = university_key
     
     @staticmethod
     def extract_nutrition_info(text):
@@ -105,18 +106,17 @@ class FoodDataCleaner:
         
         return nutrition
     
-    @staticmethod
-    def clean_food_data():
+    def clean_food_data(self):
         """ Main function to clean all food data files (currently active method)"""
 
-        # Create output directory
-        os.makedirs('data/cleaned_data', exist_ok=True)
-        
-        # File paths with meal types
+        # Create output directory for this university
+        os.makedirs(f'data/cleaned_data/{self.university_key}', exist_ok=True)
+
+        # File paths with meal types (university-specific)
         file_configs = [
-            {"path": "data/scraped_data/food_items_breakfast.json", "meal_type": "breakfast"},
-            {"path": "data/scraped_data/food_items_lunch.json", "meal_type": "lunch"}, 
-            {"path": "data/scraped_data/food_items_dinner.json", "meal_type": "dinner"}
+            {"path": f"data/scraped_data/{self.university_key}/food_items_breakfast.json", "meal_type": "breakfast"},
+            {"path": f"data/scraped_data/{self.university_key}/food_items_lunch.json", "meal_type": "lunch"},
+            {"path": f"data/scraped_data/{self.university_key}/food_items_dinner.json", "meal_type": "dinner"}
         ]
         
         all_cleaned_data = []
@@ -149,7 +149,7 @@ class FoodDataCleaner:
                 
                 # Save individual cleaned file
                 filename = os.path.basename(file_path)
-                output_path = f'data/cleaned_data/{filename}'
+                output_path = f'data/cleaned_data/{self.university_key}/{filename}'
                 
                 with open(output_path, 'w', encoding='utf-8') as f:
                     json.dump(cleaned_items, f, indent=2, ensure_ascii=False)
@@ -164,13 +164,18 @@ class FoodDataCleaner:
         
         """Remember that I am not deleting all the data from the db cuz there's already a cron job at the db side (supabase) """
 
-        # Save combined cleaned data
-        combined_output_path = 'data/cleaned_data/all_food_items_cleaned.json'
+        # Save combined cleaned data for this university
+        combined_output_path = f'data/cleaned_data/{self.university_key}/all_food_items_cleaned.json'
         with open(combined_output_path, 'w', encoding='utf-8') as f:
             json.dump(all_cleaned_data, f, indent=2, ensure_ascii=False)
-        
-        # Upload to database
-        uploader = SupabaseUploader()
-        uploader.upload_json_file(combined_output_path)
-        
-        return all_cleaned_data
+
+        print(f"Cleaned data saved for {self.university_key}: {combined_output_path}")
+
+        # Return list of all cleaned files for this university
+        cleaned_files = [combined_output_path]
+        for config in file_configs:
+            output_path = f'data/cleaned_data/{self.university_key}/{os.path.basename(config["path"])}'
+            if os.path.exists(output_path):
+                cleaned_files.append(output_path)
+
+        return cleaned_files

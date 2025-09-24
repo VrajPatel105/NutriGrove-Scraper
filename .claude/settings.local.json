@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python:*)",
+      "WebSearch",
+      "WebFetch(domain:cs50.readthedocs.io)",
+      "WebFetch(domain:api.cs50.io)",
+      "WebFetch(domain:new.dineoncampus.com)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

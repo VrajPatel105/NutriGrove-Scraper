@@ -13,7 +13,17 @@ import random
 import requests
 
 class Scraper:
-    def __init__(self, date):
+    def __init__(self, date, university_key='umassd'):
+        from university_config import UniversityConfig
+
+        self.university_key = university_key
+        self.university_config = UniversityConfig.get_university_config(university_key)
+
+        if not self.university_config:
+            raise ValueError(f"Unknown university: {university_key}")
+
+        print(f"Initializing scraper for {self.university_config['name']} ({university_key})")
+
         # Get a realistic user agent
         self.user_agents = [
             "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
@@ -24,7 +34,7 @@ class Scraper:
 
         # Configure Chrome options for stealth operation
         options = Options()
-        options.add_argument("--headless")
+        # options.add_argument("--headless")
         options.add_argument("--no-sandbox")
         options.add_argument("--disable-dev-shm-usage")
         options.add_argument("--disable-gpu")
@@ -59,7 +69,7 @@ class Scraper:
         self.date = date
 
         # Creating the directory for scraped data
-        os.makedirs('data/scraped_data', exist_ok=True)
+        os.makedirs(f'data/scraped_data/{self.university_key}', exist_ok=True)
 
     def human_delay(self, min_delay=1, max_delay=3):
         """Add random delay to mimic human behavior"""
@@ -102,21 +112,23 @@ class Scraper:
     def save_to_file(self, food_data_list, meal_type):
         """Save scraped food data to local JSON file"""
         try:
-            file_path = f'data/scraped_data/food_items_{meal_type}.json'
-            
+            file_path = f'data/scraped_data/{self.university_key}/food_items_{meal_type}.json'
+
             with open(file_path, 'w', encoding='utf-8') as f:
                 json.dump(food_data_list, f, indent=2, ensure_ascii=False)
             print(f"Saved {len(food_data_list)} {meal_type} items to {file_path}")
             return True
-            
+
         except Exception as e:
             print(f"error saving {meal_type} data: {e}")
             return False
 
     def scrape_meal(self, meal_type):
         """Generic method to scrape any meal type"""
-        print(f"\n🔍 Scraping {meal_type} data for {self.date}...")
-        url = f"https://new.dineoncampus.com/umassd/whats-on-the-menu/the-grove/{self.date}/{meal_type}"
+        from university_config import UniversityConfig
+
+        print(f"\nScraping {meal_type} data for {self.university_config['name']} on {self.date}...")
+        url = UniversityConfig.build_url(self.university_key, self.date, meal_type)
         
         try:
             self.driver.get(url)
@@ -261,7 +273,7 @@ class Scraper:
             # Save all items to file
             if all_food_items:
                 success = self.save_to_file(all_food_items, meal_type)
-                print(f"📊 Total {meal_type} items scraped: {total_items}")
+                print(f"Total {meal_type} items scraped: {total_items}")
                 return success
             else:
                 print(f"No {meal_type} items found")

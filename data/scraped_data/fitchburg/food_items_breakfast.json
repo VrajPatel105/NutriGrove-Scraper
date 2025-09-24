@@ -1,0 +1,312 @@
+[
+  {
+    "station_name": "Station 1",
+    "food_name": "Omelet Bar",
+    "nutritional_info": "OMELET BAR\n1 serving per container\nServing size: 1 plate\nCalories\n0\n% Daily Value*\nCalories\n0 kcal\nProtein (g)\n0 g\nTotal Carbohydrates (g)\n0 g\nSugar (g)\n0 g\nTotal Fat (g)\n0 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\n0 g\nSodium (mg)\n0 mg\nPotassium (mg)\n0 mg\nCalcium (mg)\n0 mg\nIron (mg)\n0 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n0 IU\nVitamin C (mg)\n0 mg\nCalories From Fat\n0 kcal\nVitamin A (RE)\n0 RE\nIngredients: Water\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 1",
+    "food_name": "Eggs",
+    "nutritional_info": "EGGS\n1 serving per container\nServing size: 3 floz\nCalories\n130\n% Daily Value*\nCalories\n130 kcal\nProtein (g)\n11 g\nTotal Carbohydrates (g)\nless than 1 gram g\nSugar (g)\n0 g\nTotal Fat (g)\n9 g\nSaturated Fat (g)\n3 g\nCholesterol (mg)\n340 mg\nDietary Fiber (g)\n0 g\nSodium (mg)\n115 mg\nPotassium (mg)\n120 mg\nCalcium (mg)\n60 mg\nIron (mg)\n1.6 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n100 IU\nVitamin C (mg)\n0 mg\nCalories From Fat\n80 kcal\nVitamin A (RE)\n- RE\nIngredients: Liquid Egg^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 1",
+    "food_name": "Egg Whites\ntwo egg whites made-to-order",
+    "nutritional_info": "EGG WHITES\n1 serving per container\nServing size: 3 floz\nCalories\n45\n% Daily Value*\nCalories\n45 kcal\nProtein (g)\n10 g\nTotal Carbohydrates (g)\nless than 1 gram g\nSugar (g)\nless than 1 gram g\nTotal Fat (g)\n0 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\n0 g\nSodium (mg)\n150 mg\nPotassium (mg)\n150 mg\nCalcium (mg)\n10 mg\nIron (mg)\n0.1 mg\nTrans Fat (g)\n- g\nVitamin D (IU)\n0 IU\nVitamin C (mg)\n0 mg\nCalories From Fat\n0 kcal\nVitamin A (RE)\n- RE\nIngredients: Liquid Egg White^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 1",
+    "food_name": "Chopped Spinach",
+    "nutritional_info": "CHOPPED SPINACH\n1 serving per container\nServing size: 1 ounce\nCalories\n5\n% Daily Value*\nCalories\n5 kcal\nProtein (g)\nless than 1 gram g\nTotal Carbohydrates (g)\n1 g\nSugar (g)\n0 g\nTotal Fat (g)\n0 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\nless than 1 gram g\nSodium (mg)\n20 mg\nPotassium (mg)\n160 mg\nCalcium (mg)\n30 mg\nIron (mg)\n0.8 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n0 IU\nVitamin C (mg)\n8 mg\nCalories From Fat\n0 kcal\nVitamin A (RE)\n- RE\nIngredients: Spinach\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 1",
+    "food_name": "Chopped Broccoli",
+    "nutritional_info": "CHOPPED BROCCOLI\n1 serving per container\nServing size: 1 ounce\nCalories\n10\n% Daily Value*\nCalories\n10 kcal\nProtein (g)\nless than 1 gram g\nTotal Carbohydrates (g)\n2 g\nSugar (g)\n0 g\nTotal Fat (g)\n0 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\nless than 1 gram g\nSodium (mg)\n10 mg\nPotassium (mg)\n90 mg\nCalcium (mg)\n10 mg\nIron (mg)\n0.2 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n0 IU\nVitamin C (mg)\n25 mg\nCalories From Fat\n0 kcal\nVitamin A (RE)\n- RE\nIngredients: Broccoli\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 1",
+    "food_name": "Chopped Tomatoes",
+    "nutritional_info": "CHOPPED TOMATOES\n1 serving per container\nServing size: 1 tbsp\nCalories\n0\n% Daily Value*\nCalories\n0 kcal\nProtein (g)\n0 g\nTotal Carbohydrates (g)\n0 g\nSugar (g)\n0 g\nTotal Fat (g)\n0 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\n0 g\nSodium (mg)\n0 mg\nPotassium (mg)\n30 mg\nCalcium (mg)\n0 mg\nIron (mg)\n0 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n0 IU\nVitamin C (mg)\n2 mg\nCalories From Fat\n0 kcal\nVitamin A (RE)\n- RE\nIngredients: Tomatoes\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 1",
+    "food_name": "Diced Onions",
+    "nutritional_info": "DICED ONIONS\n1 serving per container\nServing size: 1 tbsp\nCalories\n0\n% Daily Value*\nCalories\n0 kcal\nProtein (g)\n0 g\nTotal Carbohydrates (g)\nless than 1 gram g\nSugar (g)\n0 g\nTotal Fat (g)\n0 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\n0 g\nSodium (mg)\n0 mg\nPotassium (mg)\n10 mg\nCalcium (mg)\n0 mg\nIron (mg)\n0 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n0 IU\nVitamin C (mg)\n1 mg\nCalories From Fat\n0 kcal\nVitamin A (RE)\n- RE\nIngredients: Yellow Onions\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 1",
+    "food_name": "Sliced Mushrooms",
+    "nutritional_info": "SLICED MUSHROOMS\n1 serving per container\nServing size: 1 tbsp\nCalories\n0\n% Daily Value*\nCalories\n0 kcal\nProtein (g)\n0 g\nTotal Carbohydrates (g)\n0 g\nSugar (g)\n0 g\nTotal Fat (g)\n0 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\n0 g\nSodium (mg)\n0 mg\nPotassium (mg)\n10 mg\nCalcium (mg)\n0 mg\nIron (mg)\n0 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n0 IU\nVitamin C (mg)\n0 mg\nCalories From Fat\n0 kcal\nVitamin A (RE)\n- RE\nIngredients: Mushrooms\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 1",
+    "food_name": "Chopped Green Bell Pepper",
+    "nutritional_info": "CHOPPED GREEN BELL PEPPER\n1 serving per container\nServing size: 1 tbsp\nCalories\n0\n% Daily Value*\nCalories\n0 kcal\nProtein (g)\n0 g\nTotal Carbohydrates (g)\n0 g\nSugar (g)\n0 g\nTotal Fat (g)\n0 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\n0 g\nSodium (mg)\n0 mg\nPotassium (mg)\n10 mg\nCalcium (mg)\n0 mg\nIron (mg)\n0 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n0 IU\nVitamin C (mg)\n5 mg\nCalories From Fat\n0 kcal\nVitamin A (RE)\n- RE\nIngredients: Green Bell Peppers\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 1",
+    "food_name": "Shredded Sharp Cheddar Cheese",
+    "nutritional_info": "SHREDDED SHARP CHEDDAR CHEESE\n1 serving per container\nServing size: 2 tbsp\nCalories\n110\n% Daily Value*\nCalories\n110 kcal\nProtein (g)\n6 g\nTotal Carbohydrates (g)\nless than 1 gram g\nSugar (g)\n0 g\nTotal Fat (g)\n9 g\nSaturated Fat (g)\n5 g\nCholesterol (mg)\n30 mg\nDietary Fiber (g)\n0 g\nSodium (mg)\n190 mg\nPotassium (mg)\n20 mg\nCalcium (mg)\n200 mg\nIron (mg)\n0 mg\nTrans Fat (g)\n- g\nVitamin D (IU)\n5 IU\nVitamin C (mg)\n0 mg\nCalories From Fat\n80 kcal\nVitamin A (RE)\n- RE\nIngredients: Sharp Cheddar Cheese^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 1",
+    "food_name": "Crumbled Feta Cheese",
+    "nutritional_info": "CRUMBLED FETA CHEESE\n1 serving per container\nServing size: 1 tbsp\nCalories\n25\n% Daily Value*\nCalories\n25 kcal\nProtein (g)\n1 g\nTotal Carbohydrates (g)\n0 g\nSugar (g)\n0 g\nTotal Fat (g)\n2 g\nSaturated Fat (g)\n1 g\nCholesterol (mg)\n10 mg\nDietary Fiber (g)\n0 g\nSodium (mg)\n105 mg\nPotassium (mg)\n10 mg\nCalcium (mg)\n50 mg\nIron (mg)\n0.1 mg\nTrans Fat (g)\n- g\nVitamin D (IU)\n0 IU\nVitamin C (mg)\n0 mg\nCalories From Fat\n20 kcal\nVitamin A (RE)\n- RE\nIngredients: Feta Cheese^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 1",
+    "food_name": "Diced Smoked Ham",
+    "nutritional_info": "DICED SMOKED HAM\n1 serving per container\nServing size: 2 tbsp\nCalories\n30\n% Daily Value*\nCalories\n30 kcal\nProtein (g)\n4 g\nTotal Carbohydrates (g)\n0 g\nSugar (g)\n0 g\nTotal Fat (g)\n1.5 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\n15 mg\nDietary Fiber (g)\n0 g\nSodium (mg)\n280 mg\nPotassium (mg)\n80 mg\nCalcium (mg)\n0 mg\nIron (mg)\n0.2 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n5 IU\nVitamin C (mg)\n0 mg\nCalories From Fat\n10 kcal\nVitamin A (RE)\n- RE\nIngredients: Ham^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 1",
+    "food_name": "Diced Bacon",
+    "nutritional_info": "DICED BACON\n1 serving per container\nServing size: 2 tbsp\nCalories\n90\n% Daily Value*\nCalories\n90 kcal\nProtein (g)\n6 g\nTotal Carbohydrates (g)\n0 g\nSugar (g)\n0 g\nTotal Fat (g)\n7 g\nSaturated Fat (g)\n2 g\nCholesterol (mg)\n20 mg\nDietary Fiber (g)\n0 g\nSodium (mg)\n310 mg\nPotassium (mg)\n90 mg\nCalcium (mg)\n0 mg\nIron (mg)\n0.2 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n5 IU\nVitamin C (mg)\n0 mg\nCalories From Fat\n60 kcal\nVitamin A (RE)\n- RE\nIngredients: Bacon^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 2",
+    "food_name": "Scrambled Eggs",
+    "nutritional_info": "SCRAMBLED EGGS\n1 serving per container\nServing size: 1/2 cup\nCalories\n210\n% Daily Value*\nCalories\n210 kcal\nProtein (g)\n14 g\nTotal Carbohydrates (g)\n1 g\nSugar (g)\n0 g\nTotal Fat (g)\n16 g\nSaturated Fat (g)\n4 g\nCholesterol (mg)\n420 mg\nDietary Fiber (g)\n0 g\nSodium (mg)\n150 mg\nPotassium (mg)\n150 mg\nCalcium (mg)\n70 mg\nIron (mg)\n2 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n120 IU\nVitamin C (mg)\n0 mg\nCalories From Fat\n140 kcal\nVitamin A (RE)\n- RE\nIngredients: Liquid Egg^, Canola Oil\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 2",
+    "food_name": "Cinnamon French Toast\nServed with maple flavored syrup.",
+    "nutritional_info": "CINNAMON FRENCH TOAST\n1 serving per container\nServing size: 3 slice\nCalories\n240\n% Daily Value*\nCalories\n240 kcal\nProtein (g)\n10 g\nTotal Carbohydrates (g)\n32 g\nSugar (g)\n7 g\nTotal Fat (g)\n7 g\nSaturated Fat (g)\n2 g\nCholesterol (mg)\n150 mg\nDietary Fiber (g)\n1 g\nSodium (mg)\n250 mg\nPotassium (mg)\n130 mg\nCalcium (mg)\n50 mg\nIron (mg)\n2.3 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n45 IU\nVitamin C (mg)\n0 mg\nCalories From Fat\n70 kcal\nVitamin A (RE)\n45+ RE\nIngredients: Cinnamon Roll Dough^, Liquid Egg^, Reduced Fat Milk^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 2",
+    "food_name": "Syrup",
+    "nutritional_info": "SYRUP\n1 serving per container\nServing size: 1 floz\nCalories\n90\n% Daily Value*\nCalories\n90 kcal\nProtein (g)\n0 g\nTotal Carbohydrates (g)\n24 g\nSugar (g)\n8 g\nTotal Fat (g)\n0 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\n0 g\nSodium (mg)\n30 mg\nPotassium (mg)\n10 mg\nCalcium (mg)\n0 mg\nIron (mg)\n0 mg\nTrans Fat (g)\n- g\nVitamin D (IU)\n0 IU\nVitamin C (mg)\n0 mg\nCalories From Fat\n0 kcal\nVitamin A (RE)\n- RE\nIngredients: Pancake & Waffle Syrup^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 2",
+    "food_name": "Tater Tots\nCrispy tater puffs",
+    "nutritional_info": "TATER TOTS\n1 serving per container\nServing size: 1/2 cup\nCalories\n140\n% Daily Value*\nCalories\n140 kcal\nProtein (g)\n1 g\nTotal Carbohydrates (g)\n18 g\nSugar (g)\n0 g\nTotal Fat (g)\n8 g\nSaturated Fat (g)\n1 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\n1 g\nSodium (mg)\n400 mg\nPotassium (mg)\n270 mg\nCalcium (mg)\n0 mg\nIron (mg)\n0 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n0 IU\nVitamin C (mg)\n- mg\nCalories From Fat\n70 kcal\nVitamin A (RE)\n- RE\nIngredients: Tater Tot Potatoes^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 2",
+    "food_name": "Pork Sausage Patty\nMildly seasoned pork sausage patty",
+    "nutritional_info": "PORK SAUSAGE PATTY\n1 serving per container\nServing size: 1 each\nCalories\n120\n% Daily Value*\nCalories\n120 kcal\nProtein (g)\n4 g\nTotal Carbohydrates (g)\n0 g\nSugar (g)\n0 g\nTotal Fat (g)\n11 g\nSaturated Fat (g)\n3.5 g\nCholesterol (mg)\n20 mg\nDietary Fiber (g)\n0 g\nSodium (mg)\n220 mg\nPotassium (mg)\n70 mg\nCalcium (mg)\n10 mg\nIron (mg)\n0.4 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n0 IU\nVitamin C (mg)\n- mg\nCalories From Fat\n100 kcal\nVitamin A (RE)\n- RE\nIngredients: Pork Sausage Patty^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 2",
+    "food_name": "Meatless Vegetarian Sausage Patty",
+    "nutritional_info": "MEATLESS VEGETARIAN SAUSAGE PATTY\n1 serving per container\nServing size: 1 each\nCalories\n70\n% Daily Value*\nCalories\n70 kcal\nProtein (g)\n9 g\nTotal Carbohydrates (g)\n4 g\nSugar (g)\nless than 1 gram g\nTotal Fat (g)\n2.5 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\nless than 1 gram g\nSodium (mg)\n250 mg\nPotassium (mg)\n100 mg\nCalcium (mg)\n20 mg\nIron (mg)\n1.6 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n0 IU\nVitamin C (mg)\n0 mg\nCalories From Fat\n20 kcal\nVitamin A (RE)\n0 RE\nIngredients: Meatless Sausage^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 2",
+    "food_name": "Sausage, Egg, Cheese on English Muffin",
+    "nutritional_info": "SAUSAGE, EGG, CHEESE ON ENGLISH MUFFIN\n1 serving per container\nServing size: 1 sandwich\nCalories\n610\n% Daily Value*\nCalories\n610 kcal\nProtein (g)\n28 g\nTotal Carbohydrates (g)\n38 g\nSugar (g)\n3 g\nTotal Fat (g)\n37 g\nSaturated Fat (g)\n14 g\nCholesterol (mg)\n390 mg\nDietary Fiber (g)\n1 g\nSodium (mg)\n1060 mg\nPotassium (mg)\n290 mg\nCalcium (mg)\n200 mg\nIron (mg)\n3.6 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n160 IU\nVitamin C (mg)\n0+ mg\nCalories From Fat\n340 kcal\nVitamin A (RE)\n90+ RE\nIngredients: Egg, English Muffin^, Pork Sausage^, American Cheese^, Lettuce\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 3",
+    "food_name": "English Muffin",
+    "nutritional_info": "ENGLISH MUFFIN\n1 serving per container\nServing size: 1 each\nCalories\n150\n% Daily Value*\nCalories\n150 kcal\nProtein (g)\n5 g\nTotal Carbohydrates (g)\n30 g\nSugar (g)\nless than 1 gram g\nTotal Fat (g)\n1 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\nless than 1 gram g\nSodium (mg)\n180 mg\nPotassium (mg)\n60 mg\nCalcium (mg)\n80 mg\nIron (mg)\n1.6 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n40 IU\nVitamin C (mg)\n- mg\nCalories From Fat\n10 kcal\nVitamin A (RE)\n- RE\nIngredients: English Muffin^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 3",
+    "food_name": "Whole Wheat English Muffin",
+    "nutritional_info": "WHOLE WHEAT ENGLISH MUFFIN\n1 serving per container\nServing size: 1 each\nCalories\n120\n% Daily Value*\nCalories\n120 kcal\nProtein (g)\n5 g\nTotal Carbohydrates (g)\n23 g\nSugar (g)\n0 g\nTotal Fat (g)\n1 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\n3 g\nSodium (mg)\n230 mg\nPotassium (mg)\n90 mg\nCalcium (mg)\n90 mg\nIron (mg)\n1.6 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n0 IU\nVitamin C (mg)\n0 mg\nCalories From Fat\n10 kcal\nVitamin A (RE)\n0 RE\nIngredients: Whole Wheat English Muffin^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 3",
+    "food_name": "White Bread",
+    "nutritional_info": "WHITE BREAD\n1 serving per container\nServing size: 2 slice\nCalories\n150\n% Daily Value*\nCalories\n150 kcal\nProtein (g)\n5 g\nTotal Carbohydrates (g)\n29 g\nSugar (g)\n2 g\nTotal Fat (g)\n1.5 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\n1 g\nSodium (mg)\n260 mg\nPotassium (mg)\n50 mg\nCalcium (mg)\n50 mg\nIron (mg)\n2 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n0 IU\nVitamin C (mg)\n- mg\nCalories From Fat\n15 kcal\nVitamin A (RE)\n- RE\nIngredients: White Bread^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 3",
+    "food_name": "Whole Wheat Bread",
+    "nutritional_info": "WHOLE WHEAT BREAD\n1 serving per container\nServing size: 2 slice\nCalories\n150\n% Daily Value*\nCalories\n150 kcal\nProtein (g)\n6 g\nTotal Carbohydrates (g)\n27 g\nSugar (g)\nless than 1 gram g\nTotal Fat (g)\n1.5 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\n3 g\nSodium (mg)\n240 mg\nPotassium (mg)\n140 mg\nCalcium (mg)\n50 mg\nIron (mg)\n1.5 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n0 IU\nVitamin C (mg)\n- mg\nCalories From Fat\n15 kcal\nVitamin A (RE)\n- RE\nIngredients: Whole Wheat Bread^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 3",
+    "food_name": "Cinnamon Raisin Bread",
+    "nutritional_info": "CINNAMON RAISIN BREAD\n1 serving per container\nServing size: 1 slice\nCalories\n80\n% Daily Value*\nCalories\n80 kcal\nProtein (g)\n2 g\nTotal Carbohydrates (g)\n16 g\nSugar (g)\n0 g\nTotal Fat (g)\n1 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\n1 g\nSodium (mg)\n100 mg\nPotassium (mg)\n0 mg\nCalcium (mg)\n0 mg\nIron (mg)\n0 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n0 IU\nVitamin C (mg)\n- mg\nCalories From Fat\n10 kcal\nVitamin A (RE)\n- RE\nIngredients: Raisin Bread^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 3",
+    "food_name": "Plain Bagel",
+    "nutritional_info": "PLAIN BAGEL\n1 serving per container\nServing size: 1 each\nCalories\n300\n% Daily Value*\nCalories\n300 kcal\nProtein (g)\n9 g\nTotal Carbohydrates (g)\n60 g\nSugar (g)\n4 g\nTotal Fat (g)\n2 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\n2 g\nSodium (mg)\n300 mg\nPotassium (mg)\n- mg\nCalcium (mg)\n100 mg\nIron (mg)\n3.8 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n0 IU\nVitamin C (mg)\n- mg\nCalories From Fat\n20 kcal\nVitamin A (RE)\n- RE\nIngredients: Plain Bagel^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 3",
+    "food_name": "Whole Wheat Bagel",
+    "nutritional_info": "WHOLE WHEAT BAGEL\n1 serving per container\nServing size: 1 each\nCalories\n260\n% Daily Value*\nCalories\n260 kcal\nProtein (g)\n12 g\nTotal Carbohydrates (g)\n50 g\nSugar (g)\n4 g\nTotal Fat (g)\n2 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\n7 g\nSodium (mg)\n400 mg\nPotassium (mg)\n10 mg\nCalcium (mg)\n60 mg\nIron (mg)\n3 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n0 IU\nVitamin C (mg)\n- mg\nCalories From Fat\n20 kcal\nVitamin A (RE)\n- RE\nIngredients: Whole Wheat Bagel^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 3",
+    "food_name": "Cinnamon Raisin Bagel",
+    "nutritional_info": "CINNAMON RAISIN BAGEL\n1 serving per container\nServing size: 1 each\nCalories\n330\n% Daily Value*\nCalories\n330 kcal\nProtein (g)\n11 g\nTotal Carbohydrates (g)\n66 g\nSugar (g)\n14 g\nTotal Fat (g)\n2 g\nSaturated Fat (g)\n0.5 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\n3 g\nSodium (mg)\n460 mg\nPotassium (mg)\n150 mg\nCalcium (mg)\n40 mg\nIron (mg)\n3.4 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n0 IU\nVitamin C (mg)\n- mg\nCalories From Fat\n20 kcal\nVitamin A (RE)\n- RE\nIngredients: Cinnamon Raisin Bagel^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 3",
+    "food_name": "Udi's Plain Bagel",
+    "nutritional_info": "UDI'S PLAIN BAGEL\n1 serving per container\nServing size: 1 each\nCalories\n310\n% Daily Value*\nCalories\n310 kcal\nProtein (g)\n8 g\nTotal Carbohydrates (g)\n47 g\nSugar (g)\n6 g\nTotal Fat (g)\n9 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\n0 g\nSodium (mg)\n470 mg\nPotassium (mg)\n120 mg\nCalcium (mg)\n70 mg\nIron (mg)\n0.8 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n0 IU\nVitamin C (mg)\n- mg\nCalories From Fat\n80 kcal\nVitamin A (RE)\n- RE\nIngredients: Gluten Free Plain Bagel^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 3",
+    "food_name": "Blueberry Bagel",
+    "nutritional_info": "BLUEBERRY BAGEL\n1 serving per container\nServing size: 1 each\nCalories\n290\n% Daily Value*\nCalories\n290 kcal\nProtein (g)\n9 g\nTotal Carbohydrates (g)\n59 g\nSugar (g)\n11 g\nTotal Fat (g)\n1.5 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\n2 g\nSodium (mg)\n640 mg\nPotassium (mg)\n250 mg\nCalcium (mg)\n20 mg\nIron (mg)\n3 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n- IU\nVitamin C (mg)\n4 mg\nCalories From Fat\n15 kcal\nVitamin A (RE)\n20 RE\nIngredients: Blueberry Bagel^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 3",
+    "food_name": "Butter",
+    "nutritional_info": "BUTTER\n1 serving per container\nServing size: 1 tbsp\nCalories\n100\n% Daily Value*\nCalories\n100 kcal\nProtein (g)\n0 g\nTotal Carbohydrates (g)\n0 g\nSugar (g)\n0 g\nTotal Fat (g)\n12 g\nSaturated Fat (g)\n7 g\nCholesterol (mg)\n30 mg\nDietary Fiber (g)\n0 g\nSodium (mg)\n90 mg\nPotassium (mg)\n0 mg\nCalcium (mg)\n0 mg\nIron (mg)\n0 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n0 IU\nVitamin C (mg)\n0 mg\nCalories From Fat\n100 kcal\nVitamin A (RE)\n- RE\nIngredients: Butter^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 3",
+    "food_name": "Smart Balance Margarine",
+    "nutritional_info": "SMART BALANCE MARGARINE\n1 serving per container\nServing size: 1 tbsp\nCalories\n90\n% Daily Value*\nCalories\n90 kcal\nProtein (g)\n0 g\nTotal Carbohydrates (g)\n0 g\nSugar (g)\n- g\nTotal Fat (g)\n10 g\nSaturated Fat (g)\n2 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\n- g\nSodium (mg)\n100 mg\nPotassium (mg)\n10 mg\nCalcium (mg)\n0 mg\nIron (mg)\n0 mg\nTrans Fat (g)\n2 g\nVitamin D (IU)\n- IU\nVitamin C (mg)\n- mg\nCalories From Fat\n90 kcal\nVitamin A (RE)\n- RE\nIngredients: Margarine^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 3",
+    "food_name": "Low Fat Vanilla Yogurt",
+    "nutritional_info": "LOW FAT VANILLA YOGURT\n1 serving per container\nServing size: 4 ounce\nCalories\n70\n% Daily Value*\nCalories\n70 kcal\nProtein (g)\n2 g\nTotal Carbohydrates (g)\n15 g\nSugar (g)\n10 g\nTotal Fat (g)\n0 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\nless than 5 milligrams mg\nDietary Fiber (g)\n0 g\nSodium (mg)\n35 mg\nPotassium (mg)\n120 mg\nCalcium (mg)\n90 mg\nIron (mg)\n0 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n60 IU\nVitamin C (mg)\n- mg\nCalories From Fat\n0 kcal\nVitamin A (RE)\n- RE\nIngredients: Low Fat Vanilla Yogurt^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 3",
+    "food_name": "Low Fat Strawberry Yogurt",
+    "nutritional_info": "LOW FAT STRAWBERRY YOGURT\n1 serving per container\nServing size: 4 ounce\nCalories\n110\n% Daily Value*\nCalories\n110 kcal\nProtein (g)\n4 g\nTotal Carbohydrates (g)\n22 g\nSugar (g)\n16 g\nTotal Fat (g)\n0.5 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\nless than 5 milligrams mg\nDietary Fiber (g)\n0 g\nSodium (mg)\n55 mg\nPotassium (mg)\n180 mg\nCalcium (mg)\n130 mg\nIron (mg)\n0 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n90 IU\nVitamin C (mg)\n- mg\nCalories From Fat\n5 kcal\nVitamin A (RE)\n- RE\nIngredients: Low Fat Strawberry Yogurt^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 3",
+    "food_name": "2% Greek Plain Yogurt",
+    "nutritional_info": "2% GREEK PLAIN YOGURT\n1 serving per container\nServing size: 4 ounce\nCalories\n90\n% Daily Value*\nCalories\n90 kcal\nProtein (g)\n11 g\nTotal Carbohydrates (g)\n5 g\nSugar (g)\n5 g\nTotal Fat (g)\n2.5 g\nSaturated Fat (g)\n1.5 g\nCholesterol (mg)\n10 mg\nDietary Fiber (g)\n0 g\nSodium (mg)\n35 mg\nPotassium (mg)\n- mg\nCalcium (mg)\n110 mg\nIron (mg)\n0 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n- IU\nVitamin C (mg)\n0 mg\nCalories From Fat\n20 kcal\nVitamin A (RE)\n10 RE\nIngredients: Plain Greek Yogurt^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 3",
+    "food_name": "4% Full Fat Cottage Cheese",
+    "nutritional_info": "4% FULL FAT COTTAGE CHEESE\n1 serving per container\nServing size: 1/4 cup\nCalories\n60\n% Daily Value*\nCalories\n60 kcal\nProtein (g)\n6 g\nTotal Carbohydrates (g)\n2 g\nSugar (g)\n2 g\nTotal Fat (g)\n2.5 g\nSaturated Fat (g)\n1 g\nCholesterol (mg)\n10 mg\nDietary Fiber (g)\n0 g\nSodium (mg)\n180 mg\nPotassium (mg)\n60 mg\nCalcium (mg)\n50 mg\nIron (mg)\n0 mg\nTrans Fat (g)\n- g\nVitamin D (IU)\n0 IU\nVitamin C (mg)\n0 mg\nCalories From Fat\n20 kcal\nVitamin A (RE)\n- RE\nIngredients: Cottage Cheese^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 3",
+    "food_name": "Light Cream Cheese",
+    "nutritional_info": "LIGHT CREAM CHEESE\n1 serving per container\nServing size: 1 tbsp\nCalories\n40\n% Daily Value*\nCalories\n40 kcal\nProtein (g)\n1 g\nTotal Carbohydrates (g)\nless than 1 gram g\nSugar (g)\nless than 1 gram g\nTotal Fat (g)\n3.5 g\nSaturated Fat (g)\n2 g\nCholesterol (mg)\n10 mg\nDietary Fiber (g)\n0 g\nSodium (mg)\n55 mg\nPotassium (mg)\n20 mg\nCalcium (mg)\n20 mg\nIron (mg)\n0 mg\nTrans Fat (g)\n- g\nVitamin D (IU)\n- IU\nVitamin C (mg)\n0 mg\nCalories From Fat\n35 kcal\nVitamin A (RE)\n- RE\nIngredients: Neufchatel Cream Cheese^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 3",
+    "food_name": "Strawberry Cream Cheese",
+    "nutritional_info": "STRAWBERRY CREAM CHEESE\n1 serving per container\nServing size: 1 oz portion\nCalories\n60\n% Daily Value*\nCalories\n60 kcal\nProtein (g)\n1 g\nTotal Carbohydrates (g)\n2 g\nSugar (g)\n1 g\nTotal Fat (g)\n6 g\nSaturated Fat (g)\n3.5 g\nCholesterol (mg)\n15 mg\nDietary Fiber (g)\n0 g\nSodium (mg)\n55 mg\nPotassium (mg)\n40 mg\nCalcium (mg)\n20 mg\nIron (mg)\n0.1 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n0 IU\nVitamin C (mg)\n7 mg\nCalories From Fat\n50 kcal\nVitamin A (RE)\n- RE\nIngredients: Cream Cheese^, Strawberries\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 3",
+    "food_name": "Creamy Peanut Butter",
+    "nutritional_info": "CREAMY PEANUT BUTTER\n1 serving per container\nServing size: 1 tbsp\nCalories\n110\n% Daily Value*\nCalories\n110 kcal\nProtein (g)\n4 g\nTotal Carbohydrates (g)\n3 g\nSugar (g)\n2 g\nTotal Fat (g)\n9 g\nSaturated Fat (g)\n2 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\n1 g\nSodium (mg)\n75 mg\nPotassium (mg)\n90 mg\nCalcium (mg)\n10 mg\nIron (mg)\n0.3 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n0 IU\nVitamin C (mg)\n- mg\nCalories From Fat\n80 kcal\nVitamin A (RE)\n- RE\nIngredients: Peanut Butter^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 3",
+    "food_name": "Grape Jelly",
+    "nutritional_info": "GRAPE JELLY\n1 serving per container\nServing size: 1 tbsp\nCalories\n50\n% Daily Value*\nCalories\n50 kcal\nProtein (g)\n0 g\nTotal Carbohydrates (g)\n13 g\nSugar (g)\n12 g\nTotal Fat (g)\n0 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\n0 g\nSodium (mg)\n5 mg\nPotassium (mg)\n0 mg\nCalcium (mg)\n0 mg\nIron (mg)\n0 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n0 IU\nVitamin C (mg)\n- mg\nCalories From Fat\n0 kcal\nVitamin A (RE)\n- RE\nIngredients: Grape Jelly^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 3",
+    "food_name": "Cheerios",
+    "nutritional_info": "CHEERIOS\n1 serving per container\nServing size: 1 cup\nCalories\n100\n% Daily Value*\nCalories\n100 kcal\nProtein (g)\n3 g\nTotal Carbohydrates (g)\n20 g\nSugar (g)\n1 g\nTotal Fat (g)\n2 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\n3 g\nSodium (mg)\n140 mg\nPotassium (mg)\n180 mg\nCalcium (mg)\n100 mg\nIron (mg)\n8.1 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n40 IU\nVitamin C (mg)\n6 mg\nCalories From Fat\n15 kcal\nVitamin A (RE)\n- RE\nIngredients: Cheerios Cereal^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 3",
+    "food_name": "Rice Krispies",
+    "nutritional_info": "RICE KRISPIES\n1 serving per container\nServing size: 1 cup\nCalories\n100\n% Daily Value*\nCalories\n100 kcal\nProtein (g)\n2 g\nTotal Carbohydrates (g)\n24 g\nSugar (g)\n3 g\nTotal Fat (g)\n0 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\n0 g\nSodium (mg)\n135 mg\nPotassium (mg)\n20 mg\nCalcium (mg)\n0 mg\nIron (mg)\n7.5 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n80 IU\nVitamin C (mg)\n- mg\nCalories From Fat\n0 kcal\nVitamin A (RE)\n- RE\nIngredients: Rice Krispies Cereal^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 3",
+    "food_name": "Special K",
+    "nutritional_info": "SPECIAL K\n1 serving per container\nServing size: 1 cup\nCalories\n120\n% Daily Value*\nCalories\n120 kcal\nProtein (g)\n6 g\nTotal Carbohydrates (g)\n23 g\nSugar (g)\n4 g\nTotal Fat (g)\n0 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\n0 g\nSodium (mg)\n210 mg\nPotassium (mg)\n10 mg\nCalcium (mg)\n0 mg\nIron (mg)\n7.9 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n60 IU\nVitamin C (mg)\n7 mg\nCalories From Fat\n0 kcal\nVitamin A (RE)\n- RE\nIngredients: Special K Cereal^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 3",
+    "food_name": "Cocoa Puffs",
+    "nutritional_info": "COCOA PUFFS\n1 serving per container\nServing size: 1 cup\nCalories\n140\n% Daily Value*\nCalories\n140 kcal\nProtein (g)\n2 g\nTotal Carbohydrates (g)\n31 g\nSugar (g)\n12 g\nTotal Fat (g)\n2 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\n2 g\nSodium (mg)\n130 mg\nPotassium (mg)\n100 mg\nCalcium (mg)\n130 mg\nIron (mg)\n3.6 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n80 IU\nVitamin C (mg)\n8 mg\nCalories From Fat\n20 kcal\nVitamin A (RE)\n130 RE\nIngredients: Cocoa Puff Cereal^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 3",
+    "food_name": "Frosted Flakes",
+    "nutritional_info": "FROSTED FLAKES\n1 serving per container\nServing size: 1 cup\nCalories\n130\n% Daily Value*\nCalories\n130 kcal\nProtein (g)\n2 g\nTotal Carbohydrates (g)\n33 g\nSugar (g)\n12 g\nTotal Fat (g)\n0 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\nless than 1 gram g\nSodium (mg)\n190 mg\nPotassium (mg)\n30 mg\nCalcium (mg)\n0 mg\nIron (mg)\n7.2 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n80 IU\nVitamin C (mg)\n8 mg\nCalories From Fat\n0 kcal\nVitamin A (RE)\n140 RE\nIngredients: Frosted Flakes Cereal^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 3",
+    "food_name": "Froot Loops",
+    "nutritional_info": "FROOT LOOPS\n1 serving per container\nServing size: 1 cup\nCalories\n110\n% Daily Value*\nCalories\n110 kcal\nProtein (g)\n2 g\nTotal Carbohydrates (g)\n26 g\nSugar (g)\n9 g\nTotal Fat (g)\n1 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\n2 g\nSodium (mg)\n160 mg\nPotassium (mg)\n50 mg\nCalcium (mg)\n0 mg\nIron (mg)\n3.4 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n60 IU\nVitamin C (mg)\n- mg\nCalories From Fat\n10 kcal\nVitamin A (RE)\n- RE\nIngredients: Fruit Loops Cereal^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 3",
+    "food_name": "Lucky Charms",
+    "nutritional_info": "LUCKY CHARMS\n1 serving per container\nServing size: 1 cup\nCalories\n140\n% Daily Value*\nCalories\n140 kcal\nProtein (g)\n3 g\nTotal Carbohydrates (g)\n30 g\nSugar (g)\n12 g\nTotal Fat (g)\n1.5 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\n2 g\nSodium (mg)\n230 mg\nPotassium (mg)\n80 mg\nCalcium (mg)\n130 mg\nIron (mg)\n- mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n90 IU\nVitamin C (mg)\n9 mg\nCalories From Fat\n15 kcal\nVitamin A (RE)\n80 RE\nIngredients: Lucky Charms Cereal^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 3",
+    "food_name": "Apple Jacks",
+    "nutritional_info": "APPLE JACKS\n1 serving per container\nServing size: 1 cup\nCalories\n110\n% Daily Value*\nCalories\n110 kcal\nProtein (g)\n1 g\nTotal Carbohydrates (g)\n24 g\nSugar (g)\n9 g\nTotal Fat (g)\n1 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\n1 g\nSodium (mg)\n150 mg\nPotassium (mg)\n40 mg\nCalcium (mg)\n0 mg\nIron (mg)\n3.2 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n60 IU\nVitamin C (mg)\n- mg\nCalories From Fat\n10 kcal\nVitamin A (RE)\n- RE\nIngredients: Apple Jacks Cereal^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 3",
+    "food_name": "Cap'n Crunch's Crunch Berries",
+    "nutritional_info": "CAP'N CRUNCH'S CRUNCH BERRIES\n1 serving per container\nServing size: 1 cup\nCalories\n160\n% Daily Value*\nCalories\n160 kcal\nProtein (g)\n2 g\nTotal Carbohydrates (g)\n34 g\nSugar (g)\n17 g\nTotal Fat (g)\n2 g\nSaturated Fat (g)\n1 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\n0 g\nSodium (mg)\n290 mg\nPotassium (mg)\n60 mg\nCalcium (mg)\n0 mg\nIron (mg)\n8.5 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n0 IU\nVitamin C (mg)\n- mg\nCalories From Fat\n20 kcal\nVitamin A (RE)\n- RE\nIngredients: Crunch Berries Cereal^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 3",
+    "food_name": "Total Raisin Bran",
+    "nutritional_info": "TOTAL RAISIN BRAN\n1 serving per container\nServing size: 1 cup\nCalories\n180\n% Daily Value*\nCalories\n180 kcal\nProtein (g)\n3 g\nTotal Carbohydrates (g)\n45 g\nSugar (g)\n18 g\nTotal Fat (g)\n1 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\n5 g\nSodium (mg)\n220 mg\nPotassium (mg)\n210 mg\nCalcium (mg)\n40 mg\nIron (mg)\n14.3 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n130 IU\nVitamin C (mg)\n7 mg\nCalories From Fat\n10 kcal\nVitamin A (RE)\n- RE\nIngredients: Raisin Bran^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 3",
+    "food_name": "Frosted Mini Wheats",
+    "nutritional_info": "FROSTED MINI WHEATS\n1 serving per container\nServing size: 1 cup\nCalories\n210\n% Daily Value*\nCalories\n210 kcal\nProtein (g)\n5 g\nTotal Carbohydrates (g)\n51 g\nSugar (g)\n12 g\nTotal Fat (g)\n1.5 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\n6 g\nSodium (mg)\n10 mg\nPotassium (mg)\n160 mg\nCalcium (mg)\n0 mg\nIron (mg)\n18 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n0 IU\nVitamin C (mg)\n- mg\nCalories From Fat\n15 kcal\nVitamin A (RE)\n- RE\nIngredients: Frosted Mini Wheats^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 3",
+    "food_name": "Corn Chex",
+    "nutritional_info": "CORN CHEX\n1 serving per container\nServing size: 1 cup\nCalories\n120\n% Daily Value*\nCalories\n120 kcal\nProtein (g)\n2 g\nTotal Carbohydrates (g)\n26 g\nSugar (g)\n3 g\nTotal Fat (g)\n1 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\n2 g\nSodium (mg)\n220 mg\nPotassium (mg)\n0 mg\nCalcium (mg)\n100 mg\nIron (mg)\n8.6 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n60 IU\nVitamin C (mg)\n7 mg\nCalories From Fat\n5 kcal\nVitamin A (RE)\n- RE\nIngredients: Corn Chex Cereal^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 3",
+    "food_name": "Rice Chex",
+    "nutritional_info": "RICE CHEX\n1 serving per container\nServing size: 1 cup\nCalories\n100\n% Daily Value*\nCalories\n100 kcal\nProtein (g)\n2 g\nTotal Carbohydrates (g)\n23 g\nSugar (g)\n2 g\nTotal Fat (g)\n0.5 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\n1 g\nSodium (mg)\n210 mg\nPotassium (mg)\n50 mg\nCalcium (mg)\n90 mg\nIron (mg)\n9.7 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n110 IU\nVitamin C (mg)\n6 mg\nCalories From Fat\n0 kcal\nVitamin A (RE)\n60 RE\nIngredients: Rice Chex^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 3",
+    "food_name": "Low Fat Almond Granola",
+    "nutritional_info": "LOW FAT ALMOND GRANOLA\n1 serving per container\nServing size: 1/2 cup\nCalories\n150\n% Daily Value*\nCalories\n150 kcal\nProtein (g)\n3 g\nTotal Carbohydrates (g)\n33 g\nSugar (g)\n11 g\nTotal Fat (g)\n2 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\n4 g\nSodium (mg)\n100 mg\nPotassium (mg)\n100 mg\nCalcium (mg)\n10 mg\nIron (mg)\n3 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n50 IU\nVitamin C (mg)\n1 mg\nCalories From Fat\n20 kcal\nVitamin A (RE)\n0 RE\nIngredients: Low Fat Granola with Almonds Cereal^\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 3",
+    "food_name": "Banana",
+    "nutritional_info": "BANANA\n1 serving per container\nServing size: 1 each\nCalories\n110\n% Daily Value*\nCalories\n110 kcal\nProtein (g)\n1 g\nTotal Carbohydrates (g)\n27 g\nSugar (g)\n14 g\nTotal Fat (g)\n0 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\n3 g\nSodium (mg)\n0 mg\nPotassium (mg)\n420 mg\nCalcium (mg)\n10 mg\nIron (mg)\n0.3 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n0 IU\nVitamin C (mg)\n10 mg\nCalories From Fat\n0 kcal\nVitamin A (RE)\n- RE\nIngredients: Banana\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 3",
+    "food_name": "Orange",
+    "nutritional_info": "ORANGE\n1 serving per container\nServing size: 1 each\nCalories\n60\n% Daily Value*\nCalories\n60 kcal\nProtein (g)\n1 g\nTotal Carbohydrates (g)\n14 g\nSugar (g)\n11 g\nTotal Fat (g)\n0 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\n3 g\nSodium (mg)\n0 mg\nPotassium (mg)\n210 mg\nCalcium (mg)\n50 mg\nIron (mg)\n0.1 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n0 IU\nVitamin C (mg)\n62 mg\nCalories From Fat\n0 kcal\nVitamin A (RE)\n- RE\nIngredients: Orange\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 3",
+    "food_name": "Apple",
+    "nutritional_info": "APPLE\n1 serving per container\nServing size: 1 each\nCalories\n70\n% Daily Value*\nCalories\n70 kcal\nProtein (g)\n0 g\nTotal Carbohydrates (g)\n18 g\nSugar (g)\n14 g\nTotal Fat (g)\n0 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\n3 g\nSodium (mg)\n0 mg\nPotassium (mg)\n140 mg\nCalcium (mg)\n10 mg\nIron (mg)\n0.2 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n0 IU\nVitamin C (mg)\n6 mg\nCalories From Fat\n0 kcal\nVitamin A (RE)\n- RE\nIngredients: Red Delicious Apple\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 3",
+    "food_name": "Cubed Cantaloupe",
+    "nutritional_info": "CUBED CANTALOUPE\n1 serving per container\nServing size: 2 ounce\nCalories\n20\n% Daily Value*\nCalories\n20 kcal\nProtein (g)\n0 g\nTotal Carbohydrates (g)\n5 g\nSugar (g)\n4 g\nTotal Fat (g)\n0 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\nless than 1 gram g\nSodium (mg)\n10 mg\nPotassium (mg)\n150 mg\nCalcium (mg)\n10 mg\nIron (mg)\n0.1 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n0 IU\nVitamin C (mg)\n21 mg\nCalories From Fat\n0 kcal\nVitamin A (RE)\n- RE\nIngredients: Cantaloupe\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 3",
+    "food_name": "Cubed Honeydew",
+    "nutritional_info": "CUBED HONEYDEW\n1 serving per container\nServing size: 2 ounce\nCalories\n20\n% Daily Value*\nCalories\n20 kcal\nProtein (g)\n0 g\nTotal Carbohydrates (g)\n5 g\nSugar (g)\n5 g\nTotal Fat (g)\n0 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\n0 g\nSodium (mg)\n10 mg\nPotassium (mg)\n130 mg\nCalcium (mg)\n0 mg\nIron (mg)\n0.1 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n0 IU\nVitamin C (mg)\n10 mg\nCalories From Fat\n0 kcal\nVitamin A (RE)\n- RE\nIngredients: Honeydew Melon\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 3",
+    "food_name": "Cubed Watermelon",
+    "nutritional_info": "CUBED WATERMELON\n1 serving per container\nServing size: 1/4 cup\nCalories\n10\n% Daily Value*\nCalories\n10 kcal\nProtein (g)\n0 g\nTotal Carbohydrates (g)\n2 g\nSugar (g)\n2 g\nTotal Fat (g)\n0 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\n0 g\nSodium (mg)\n0 mg\nPotassium (mg)\n30 mg\nCalcium (mg)\n0 mg\nIron (mg)\n0.1 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n0 IU\nVitamin C (mg)\n2 mg\nCalories From Fat\n0 kcal\nVitamin A (RE)\n- RE\nIngredients: Watermelon\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 3",
+    "food_name": "Grapefruit",
+    "nutritional_info": "GRAPEFRUIT\n1 serving per container\nServing size: 1 half\nCalories\n35\n% Daily Value*\nCalories\n35 kcal\nProtein (g)\nless than 1 gram g\nTotal Carbohydrates (g)\n9 g\nSugar (g)\n6 g\nTotal Fat (g)\n0 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\n1 g\nSodium (mg)\n0 mg\nPotassium (mg)\n110 mg\nCalcium (mg)\n20 mg\nIron (mg)\n0.1 mg\nTrans Fat (g)\n0 g\nVitamin D (IU)\n0 IU\nVitamin C (mg)\n26 mg\nCalories From Fat\n0 kcal\nVitamin A (RE)\n- RE\nIngredients: Ruby Red Grapefruit\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  },
+  {
+    "station_name": "Station 3",
+    "food_name": "Honey",
+    "nutritional_info": "HONEY\n1 serving per container\nServing size: 1 tbsp\nCalories\n60\n% Daily Value*\nCalories\n60 kcal\nProtein (g)\n0 g\nTotal Carbohydrates (g)\n17 g\nSugar (g)\n17 g\nTotal Fat (g)\n0 g\nSaturated Fat (g)\n0 g\nCholesterol (mg)\n0 mg\nDietary Fiber (g)\n0 g\nSodium (mg)\n0 mg\nPotassium (mg)\n10 mg\nCalcium (mg)\n0 mg\nIron (mg)\n0.1 mg\nTrans Fat (g)\n- g\nVitamin D (IU)\n0 IU\nVitamin C (mg)\n0 mg\nCalories From Fat\n0 kcal\nVitamin A (RE)\n- RE\nIngredients: Honey\nDisclaimer: ^ These items contain additional ingredients. If you have questions, please ask a manager.\n* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.\nClose"
+  }
+]

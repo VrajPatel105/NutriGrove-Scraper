@@ -1,32 +1,46 @@
-from scraper import Scraper
+"""
+Multi-University Food Scraping Script
+Scrapes food data from multiple universities in parallel
+"""
+
+from multi_university_scraper import MultiUniversityScraper
 from datetime import datetime
-from clean_data import FoodDataCleaner
+import sys
 
-# Use today's date
-today = datetime.today()
-today_date = today.strftime('%Y-%m-%d')
-is_weekend = today.weekday() >= 5  # Saturday=5, Sunday=6
+def main():
+    print("Starting Multi-University Food Data Scraping")
+    print("=" * 60)
 
-scraper = Scraper(today_date)
+    try:
+        # Use today's date or accept date from command line
+        if len(sys.argv) > 1:
+            date = sys.argv[1]
+            print(f"Using provided date: {date}")
+        else:
+            date = datetime.today().strftime('%Y-%m-%d')
+            print(f"Using today's date: {date}")
 
-try:
-    if is_weekend:
-        # On weekends, breakfast and lunch are the same (brunch), so only scrape one
-        print("Weekend detected - scraping brunch (breakfast) and dinner only")
-        scraper.fetch_breakfast()  # This will contain brunch items
-        scraper.fetch_dinner()
-    else:
-        # On weekdays, scrape all three meals
-        print("Weekday detected - scraping breakfast, lunch, and dinner")
-        scraper.fetch_breakfast()
-        scraper.fetch_lunch()
-        scraper.fetch_dinner() 
-finally:
-    scraper.close()
+        # Initialize and run multi-university scraper
+        multi_scraper = MultiUniversityScraper(date)
 
-# once the scraping is done, now we need to clean the scraped data.
-cleaner = FoodDataCleaner()
-cleaner.clean_food_data()
+        # Run complete pipeline with 4 parallel workers (adjust as needed)
+        results = multi_scraper.run_complete_pipeline(max_workers=4)
 
+        # Exit with success/failure code
+        total_universities = len(results['scraping_results'])
+        successful_scrapes = results['successful_scrapes']
+        successful_processing = results['successful_processing']
 
-# now tht we have stored the cleaned data to our dir, now we can finally go ahead and upload all the cleaned data to the db.
+        if successful_scrapes == total_universities and successful_processing == total_universities:
+            print(f"All {total_universities} universities processed successfully!")
+            sys.exit(0)
+        else:
+            print(f"Some universities failed. Scraping: {successful_scrapes}/{total_universities}, Processing: {successful_processing}/{total_universities}")
+            sys.exit(1)
+
+    except Exception as e:
+        print(f"Fatal error in multi-university scraper: {str(e)}")
+        sys.exit(1)
+
+if __name__ == "__main__":
+    main()

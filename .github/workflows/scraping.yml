@@ -1,30 +1,30 @@
-name: Daily Scraping for NutriGrove
+name: Multi-University Daily Scraping for NutriGrove
 
 on:
   schedule:
-    # Run every day at 9:00 PM UTC (adjust timezone as needed)
+    # Run every day at 10:35 AM UTC (adjust timezone as needed)
     - cron: '35 10 * * *'
   workflow_dispatch: # Allows manual triggering
 
 jobs:
-  scrape:
+  multi-university-scrape:
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-    
+
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
         python-version: '3.9'
-    
+
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-    
-    - name: Run scraping script
+
+    - name: Run multi-university scraping script
       run: python main.py
       env:
         SUPABASE_URL: ${{ secrets.SUPABASE_URL }}

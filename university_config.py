@@ -12,70 +12,70 @@ class UniversityConfig:
             'requires_meal_type': True,
             'database_name': 'cleaned_data',  # Keep existing for backward compatibility
             'dining_hall': 'the-grove'
-        },
-        'wpi': {
-            'name': 'Worcester Polytechnic Institute',
-            'short_name': 'wpi',
-            'base_url': 'https://new.dineoncampus.com/WPI/whats-on-the-menu/morgan-dining-hall',
-            'requires_date': True,
-            'requires_meal_type': True,
-            'database_name': 'wpi_cleaned_data',
-            'dining_hall': 'morgan-dining-hall'
-        },
-        'northeastern': {
-            'name': 'Northeastern University',
-            'short_name': 'northeastern',
-            'base_url': 'https://new.dineoncampus.com/dining/whats-on-the-menu/founders-commons',
-            'requires_date': True,
-            'requires_meal_type': True,
-            'database_name': 'northeastern_cleaned_data',
-            'dining_hall': 'founders-commons'
-        },
-        'northwestern': {
-            'name': 'Northwestern University',
-            'short_name': 'northwestern',
-            'base_url': 'https://new.dineoncampus.com/northwestern/whats-on-the-menu/allison-dining-commons',
-            'requires_date': True,
-            'requires_meal_type': True,
-            'database_name': 'northwestern_cleaned_data',
-            'dining_hall': 'allison-dining-commons'
-        },
-        'babson': {
-            'name': 'Babson College',
-            'short_name': 'babson',
-            'base_url': 'https://new.dineoncampus.com/babson/whats-on-the-menu/trim-dining-hall',
-            'requires_date': True,
-            'requires_meal_type': True,
-            'database_name': 'babson_cleaned_data',
-            'dining_hall': 'trim-dining-hall'
-        },
-        'fitchburg': {
-            'name': 'Fitchburg University',
-            'short_name': 'fitchburg',
-            'base_url': 'https://new.dineoncampus.com/fitchburg/whats-on-the-menu/holmes-dining-commons',
-            'requires_date': True,
-            'requires_meal_type': True,
-            'database_name': 'fitchburg_cleaned_data',
-            'dining_hall': 'holmes-dining-commons'
-        },
-        'massmaritime': {
-            'name': 'Massachusetts Maritime Academy',
-            'short_name': 'massmaritime',
-            'base_url': 'https://new.dineoncampus.com/MassMaritime/whats-on-the-menu/pande-hall',
-            'requires_date': True,
-            'requires_meal_type': True,
-            'database_name': 'massmaritime_cleaned_data',
-            'dining_hall': 'pande-hall'
-        },
-        'lasell': {
-            'name': 'Lasell University',
-            'short_name': 'lasell',
-            'base_url': 'https://new.dineoncampus.com/lasell/whats-on-the-menu/valentine-dining',
-            'requires_date': True,
-            'requires_meal_type': True,
-            'database_name': 'lasell_cleaned_data',
-            'dining_hall': 'valentine-dining'
-        },
+         },
+        # 'wpi': {
+        #     'name': 'Worcester Polytechnic Institute',
+        #     'short_name': 'wpi',
+        #     'base_url': 'https://new.dineoncampus.com/WPI/whats-on-the-menu/morgan-dining-hall',
+        #     'requires_date': True,
+        #     'requires_meal_type': True,
+        #     'database_name': 'wpi_cleaned_data',
+        #     'dining_hall': 'morgan-dining-hall'
+        # },
+        # 'northeastern': {
+        #     'name': 'Northeastern University',
+        #     'short_name': 'northeastern',
+        #     'base_url': 'https://new.dineoncampus.com/dining/whats-on-the-menu/founders-commons',
+        #     'requires_date': True,
+        #     'requires_meal_type': True,
+        #     'database_name': 'northeastern_cleaned_data',
+        #     'dining_hall': 'founders-commons'
+        # },
+        # 'northwestern': {
+        #     'name': 'Northwestern University',
+        #     'short_name': 'northwestern',
+        #     'base_url': 'https://new.dineoncampus.com/northwestern/whats-on-the-menu/allison-dining-commons',
+        #     'requires_date': True,
+        #     'requires_meal_type': True,
+        #     'database_name': 'northwestern_cleaned_data',
+        #     'dining_hall': 'allison-dining-commons'
+        # },
+        # 'babson': {
+        #     'name': 'Babson College',
+        #     'short_name': 'babson',
+        #     'base_url': 'https://new.dineoncampus.com/babson/whats-on-the-menu/trim-dining-hall',
+        #     'requires_date': True,
+        #     'requires_meal_type': True,
+        #     'database_name': 'babson_cleaned_data',
+        #     'dining_hall': 'trim-dining-hall'
+        # },
+        # 'fitchburg': {
+        #     'name': 'Fitchburg University',
+        #     'short_name': 'fitchburg',
+        #     'base_url': 'https://new.dineoncampus.com/fitchburg/whats-on-the-menu/holmes-dining-commons',
+        #     'requires_date': True,
+        #     'requires_meal_type': True,
+        #     'database_name': 'fitchburg_cleaned_data',
+        #     'dining_hall': 'holmes-dining-commons'
+        # },
+        # 'massmaritime': {
+        #     'name': 'Massachusetts Maritime Academy',
+        #     'short_name': 'massmaritime',
+        #     'base_url': 'https://new.dineoncampus.com/MassMaritime/whats-on-the-menu/pande-hall',
+        #     'requires_date': True,
+        #     'requires_meal_type': True,
+        #     'database_name': 'massmaritime_cleaned_data',
+        #     'dining_hall': 'pande-hall'
+        # },
+        # 'lasell': {
+        #     'name': 'Lasell University',
+        #     'short_name': 'lasell',
+        #     'base_url': 'https://new.dineoncampus.com/lasell/whats-on-the-menu/valentine-dining',
+        #     'requires_date': True,
+        #     'requires_meal_type': True,
+        #     'database_name': 'lasell_cleaned_data',
+        #     'dining_hall': 'valentine-dining'
+        # },
         'harvard': {
             'name': 'Harvard University',
             'short_name': 'harvard',

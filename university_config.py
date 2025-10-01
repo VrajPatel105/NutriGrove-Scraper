@@ -12,7 +12,7 @@ class UniversityConfig:
             'requires_meal_type': True,
             'database_name': 'cleaned_data',  # Keep existing for backward compatibility
             'dining_hall': 'the-grove'
-         },
+         }, 
         # 'wpi': {
         #     'name': 'Worcester Polytechnic Institute',
         #     'short_name': 'wpi',
